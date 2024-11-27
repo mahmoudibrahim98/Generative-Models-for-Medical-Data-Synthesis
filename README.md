@@ -93,13 +93,18 @@ Each table includes the **application, model type, technology, Paperlinks, code 
 | GAN     | Unconditonal                                          | WaveGAN,Pulse2Pulse                                    | [Paper](https://doi.org/10.1038/s41598-021-01295-2)                              | [Code](https://github.com/vlbthambawita/deepfake-ecg)                                                  | P            | 2021-11 |
 | GAN     | Unconditonal                                          | Composite GAN:LSTM-GAN and DCGAN                       | [Paper](https://doi.org/10.23919/EUSIPCO54536.2021.9616079)                      |                                                                                                        | U            | 2021-08 |
 | GAN     | Unconditonal                                          | LSTM-based:BiLSTM                                      | [Paper](https://www.sciencedirect.com/science/article/abs/pii/S0022073621001850) |                                                                                                        | F            | 2021-06 |
-### Other Signals
+### Electroencephalogram (EEG)
 
-| **Application**         | **Type**   | **Modality**     | **Technology**  | **Paper**                           | **Code**                                | **Evaluation**            |
-|--------------------------|------------|------------------|------------------|-------------------------------------|-----------------------------------------|---------------------------|
-| Physiological Signal Gen | GAN        | Multi-signal     | AC-WGAN-GP       | [Paper](https://example.com)  | [Code ](https://github.com/example) | Fidelity (MSE), Diversity (Variance) |
-
----
+| Type           | Application                   | Architecture                 | Paper Link                                                                                      | Code Link                                                                                                     | Evaluation   | Date    |
+|:---------------|:------------------------------|:-----------------------------|:------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------|:-------------|:--------|
+| DM             | Unconditional                 | LDM                          | [Paper](https://openreview.net/forum?id=mDwURmlapW)                                             | [Code](https://github.com/bruAristimunha/Synthetic-Sleep-EEG-Signal-Generation-using-Latent-Diffusion-Models) | F            | 2023-10 |
+| VAE            | Unconditional                 | causal recurrent CAE (CRVAE) | [arXiv](http://arxiv.org/abs/2301.06574v1)                                                      | [Code](https://github.com/hongmingli1995/CR-VAE)                                                              | U, F, Q      | 2023-01 |
+| GAN            | Unconditional                 | temporal GAN(TGAN)           | [Paper](https://www.frontiersin.org/journals/neurology/articles/10.3389/fneur.2022.755094/full) |                                                                                                               | U, Q         | 2022-02 |
+| Language Model | Unconditional                 | GPT2                         | [Paper](https://doi.org/10.1109/LRA.2021.3056355)                                               | [Code](https://github.com/jordan-bird/Generational-Loop-GPT2)                                                 | U            | 2021-02 |
+| DM             | Conditioned STFT spectrograms | DiffEEG                      | [arXiv](http://arxiv.org/abs/2306.08256v1)                                                      |                                                                                                               | U, F         | 2023-06 |
+| DM             | Conditioned STFT spectrograms | DDPM                         | [arXiv](http://arxiv.org/abs/2303.06068v1)                                                      |                                                                                                               | U            | 2023-03 |
+| DM             | Class-conditional             | DDPM                         | [Paper](https://doi.org/10.1016/j.patter.2024.101047)                                           |                                                                                                               | U, F, C      | 2023-08 |
+| GAN            | Class-conditional             | Conditional Wasserstein GAN  | [Paper](https://doi.org/10.1155/2022/7028517)                                                   |                                                                                                               | U            | 2022-03 |
 
 ## **Images**
 
