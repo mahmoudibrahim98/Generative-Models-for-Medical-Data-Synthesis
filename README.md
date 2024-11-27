@@ -100,7 +100,63 @@ Each table includes the **application, model type, technology, paper links, code
 
 This section includes papers for dermoscopic, mammographic, ultrasound, CT, MRI, X-ray, and multi-modal imaging data.
 
-### Table 4: Dermoscopic Images
+### Dermoscopic Images
+
+| **Application**         | **Type**   | **Modality**   | **Technology**  | **Paper**                           | **Code**                                | **Evaluation**                |
+|--------------------------|------------|----------------|------------------|-------------------------------------|-----------------------------------------|-------------------------------|
+| Lesion Segmentation      | GAN        | Dermoscopic    | DCGAN            | [Paper Link](https://example.com)  | [Code Link](https://github.com/example) | Fidelity (IoU), Diversity (IS), Clinical Review |
+
+---
+
+### Mammography Images
+
+| **Application**         | **Type**   | **Modality**   | **Technology**  | **Paper**                           | **Code**                                | **Evaluation**                |
+|--------------------------|------------|----------------|------------------|-------------------------------------|-----------------------------------------|-------------------------------|
+| Lesion Segmentation      | GAN        | Dermoscopic    | DCGAN            | [Paper Link](https://example.com)  | [Code Link](https://github.com/example) | Fidelity (IoU), Diversity (IS), Clinical Review |
+
+---
+
+### Ultrasound Images
+
+| **Application**         | **Type**   | **Modality**   | **Technology**  | **Paper**                           | **Code**                                | **Evaluation**                |
+|--------------------------|------------|----------------|------------------|-------------------------------------|-----------------------------------------|-------------------------------|
+| Lesion Segmentation      | GAN        | Dermoscopic    | DCGAN            | [Paper Link](https://example.com)  | [Code Link](https://github.com/example) | Fidelity (IoU), Diversity (IS), Clinical Review |
+
+---
+
+### MRI Images
+
+| **Application**         | **Type**   | **Modality**   | **Technology**  | **Paper**                           | **Code**                                | **Evaluation**                |
+|--------------------------|------------|----------------|------------------|-------------------------------------|-----------------------------------------|-------------------------------|
+| Lesion Segmentation      | GAN        | Dermoscopic    | DCGAN            | [Paper Link](https://example.com)  | [Code Link](https://github.com/example) | Fidelity (IoU), Diversity (IS), Clinical Review |
+
+---
+
+### CT Images
+
+| **Application**         | **Type**   | **Modality**   | **Technology**  | **Paper**                           | **Code**                                | **Evaluation**                |
+|--------------------------|------------|----------------|------------------|-------------------------------------|-----------------------------------------|-------------------------------|
+| Lesion Segmentation      | GAN        | Dermoscopic    | DCGAN            | [Paper Link](https://example.com)  | [Code Link](https://github.com/example) | Fidelity (IoU), Diversity (IS), Clinical Review |
+
+---
+
+### X-ray Images
+
+| **Application**         | **Type**   | **Modality**   | **Technology**  | **Paper**                           | **Code**                                | **Evaluation**                |
+|--------------------------|------------|----------------|------------------|-------------------------------------|-----------------------------------------|-------------------------------|
+| Lesion Segmentation      | GAN        | Dermoscopic    | DCGAN            | [Paper Link](https://example.com)  | [Code Link](https://github.com/example) | Fidelity (IoU), Diversity (IS), Clinical Review |
+
+---
+
+### OCT Images
+
+| **Application**         | **Type**   | **Modality**   | **Technology**  | **Paper**                           | **Code**                                | **Evaluation**                |
+|--------------------------|------------|----------------|------------------|-------------------------------------|-----------------------------------------|-------------------------------|
+| Lesion Segmentation      | GAN        | Dermoscopic    | DCGAN            | [Paper Link](https://example.com)  | [Code Link](https://github.com/example) | Fidelity (IoU), Diversity (IS), Clinical Review |
+
+---
+
+### Multiple Images
 
 | **Application**         | **Type**   | **Modality**   | **Technology**  | **Paper**                           | **Code**                                | **Evaluation**                |
 |--------------------------|------------|----------------|------------------|-------------------------------------|-----------------------------------------|-------------------------------|
