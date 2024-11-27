@@ -18,7 +18,7 @@ This repository is structured to:
 
 ## **Table of Contents**
 
-1. [Overview of Tables](#overview-of-tables)
+1. [Synthesis applications and purpose of synthesis](#synthesis-applications)
 2. [Electronic Health Records (EHR)](#electronic-health-records-ehr)
 3. [Signals](#signals)
    - [Electrocardiogram (ECG)](#electrocardiogram-ecg)
@@ -46,7 +46,6 @@ Generative models in medical data synthesis can be broadly categorized into unco
 2. Conditional Models: These models incorporate external information, such as images, text, semantic maps, class labels, attributes, or signals, to guide the generation process.
 
 ### **Key Synthesis Applications**
-### Synthesis Applications Table
 
 | **Data Type**            | **Synthesis Application**       | **Description**                                                                                     | **Examples**                                                                                       |
 |---------------------------|----------------------------------|-----------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
