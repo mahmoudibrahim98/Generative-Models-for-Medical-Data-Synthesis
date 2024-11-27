@@ -132,14 +132,14 @@ This section includes papers for dermoscopic, mammographic, ultrasound, CT, MRI,
 | GAN             | Class conditional | Cgan                                 | [Paper](https://doi.org/10.1016/j.bspc.2023.105456)        |                                                                       | U            | 2024-01 |
 | Diffusion Model | text-to-image     | FineTuned_StableDiffusion            | [Paper](https://doi.org/10.3390/s24072076)                 | [Code](https://github.com/Likalto4/diffusion-models_master/tree/main) | F, Q         | 2023-06 |
 | GAN             | Intra-translation | CycleGAN                             | [Paper](https://doi.org/10.3389/fonc.2022.1044496)         | [Code](https://github.com/RichardObi/medigan)                         | U, F, Q, P   | 2023-01 |
-| GAN             | Intra-translation | complete representation GAN (CR-GAN) | [Paper](https://doi.org/10.3390/app122312206)              | [Code](Original method: https://github.com/bluer555/CR-GAN)           | F, P         | 2022-11 |
+| GAN             | Intra-translation | complete representation GAN (CR-GAN) | [Paper](https://doi.org/10.3390/app122312206)              | [Original Code](https://github.com/bluer555/CR-GAN)           | F, P         | 2022-11 |
 | GAN             | Intra-translation | Pix2Pix                              | [Paper](https://doi.org/10.1109/IMPACT55510.2022.10029087) |                                                                       | U, F, P      | 2022-11 |
 | GAN             | Intra-translation | pGAN variant                         | [Paper](https://doi.org/10.1016/j.compbiomed.2022.105444)  |                                                                       | U            | 2022-06 |
 | GAN             | Class conditional | ROImammoGAN                          | [Paper](https://doi.org/10.1038/s41598-022-09929-9)        |                                                                       | F, P         | 2022-04 |
 | GAN             | Intra-translation | HRGAN, based on CycleGAN             | [Paper](https://doi.org/10.3389/fonc.2022.868257)          |                                                                       | U            | 2022-04 |
 | GAN             | Unconditional     | DCGAN,WGAN-GP                        | [Paper](https://doi.org/10.1117/12.2625781)                |                                                                       | U, P         | 2022-03 |
 | GAN             | Intra-translation | Pix2Pix                              | [Paper](https://doi.org/10.1109/TMI.2021.3108949)          |                                                                       | U, P         | 2021-12 |
-| GAN             | Intra-translation | DCGAN , InfillingGAN                 | [Paper](https://doi.org/10.1016/j.cmpb.2021.106019)        | [Code](Code for original method)                                      | U, F, P      | 2021-04 |
+| GAN             | Intra-translation | DCGAN , InfillingGAN                 | [Paper](https://doi.org/10.1016/j.cmpb.2021.106019)        | [Original Code](https://github.com/Natsu6767/DCGAN-PyTorch)                                      | U, F, P      | 2021-04 |
 
 ### Ultrasound Images
 
