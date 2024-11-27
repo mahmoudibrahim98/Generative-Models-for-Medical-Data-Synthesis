@@ -1,6 +1,6 @@
 # **Generative Models for Medical Data Synthesis**
 
-Welcome to the repository for the survey paper, **"Generative Models for Medical Data Synthesis: A Systematic Review"**. This repository provides links to the papers and code referenced in the survey, along with detailed summaries of the evaluation methods used across various data modalities.
+Welcome to the repository for the survey paper, [**"Generative Models for Medical Data Synthesis: A Systematic Review"**](https://arxiv.org/abs/2407.00116). This repository provides links to the papers and code referenced in the survey, along with detailed summaries of the evaluation methods used across various data modalities.
 
 ## **Introduction**
 
