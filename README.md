@@ -22,7 +22,7 @@ This repository is structured to:
 2. [Electronic Health Records (EHR)](#electronic-health-records-ehr)
 3. [Signals](#signals)
    - [Electrocardiogram (ECG)](#electrocardiogram-ecg)
-   - [Other Signals](#other-signals)
+   - [Electroencephalogram (EEG)](#other-signals)
 4. [Images](#images)
    - [Dermoscopic Images](#dermoscopic-images)
    - [Mammographic Images](#mammographic-images)
