@@ -110,7 +110,6 @@ Each table includes the **application, model type, technology, Paperlinks, code 
 This section includes papers for dermoscopic, mammographic, ultrasound, CT, MRI, X-ray, and multi-modal imaging data.
 
 ### Dermoscopic Images
-
 | Type            | Application                     | Architecture                                        | Paper Link                                                | Code Link                                                     | Evaluation    | Date    |
 |:----------------|:--------------------------------|:----------------------------------------------------|:----------------------------------------------------------|:--------------------------------------------------------------|:--------------|:--------|
 | GAN             | Unconditional                   | Pgan                                                | [Paper](https://doi.org/10.1016/j.artmed.2023.102556)     |                                                               | U, F          | 2023-10 |
@@ -124,7 +123,8 @@ This section includes papers for dermoscopic, mammographic, ultrasound, CT, MRI,
 | GAN             | Unconditional                   | StyleGAN2                                           | [Paper](https://doi.org/10.1007/s11265-022-01757-4)       |                                                               | U, F          | 2022-04 |
 | GAN             | Class conditional               | cGAN                                                | [Paper](https://doi.org/10.1109/TENCON54134.2021.9707291) |                                                               | U             | 2021-12 |
 | GAN             | Unconditional                   | SLA-StyleGAN                                        | [Paper](https://doi.org/10.1109/ACCESS.2021.3049600)      |                                                               | U, F, Q       | 2021-01 |
-                                                           | U, F          | 2023-10 |
+
+
 ### Mammography Images
 
 | **Application**         | **Type**   | **Modality**   | **Technology**  | **Paper**                           | **Code**                                | **Evaluation**                |
