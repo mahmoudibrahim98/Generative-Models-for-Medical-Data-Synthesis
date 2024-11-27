@@ -39,6 +39,31 @@ This repository is structured to:
 
 ---
 
+## **Synthesis applications and purpose of synthesis**
+Generative models in medical data synthesis can be broadly categorized into unconditional and conditional models:
+
+1. Unconditional Models: These models take a random variable as input and generate data without additional context or guidance.
+2. Conditional Models: These models incorporate external information, such as images, text, semantic maps, class labels, attributes, or signals, to guide the generation process.
+
+### **Key Synthesis Applications**
+### Synthesis Applications Table
+
+| **Data Type**            | **Synthesis Application**       | **Description**                                                                                     | **Examples**                                                                                       |
+|---------------------------|----------------------------------|-----------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
+| **EHR**                  | Longitudinal EHR                | Medical codes from multiple patient visits.                                                        | Patient diagnostic history across hospital visits.                                                |
+|                           | Aggregated EHR                 | Longitudinal data condensed into a single row.                                                     | Summary of all patient visits in a single record.                                                 |
+|                           | Time-dependent EHR             | Time-series readings from a single patient visit.                                                  | Vitals recorded during a hospital stay.                                                           |
+|                           | Snapshot EHR                   | A single snapshot focusing on specific patient attributes.                                          | Demographic details with selected health metrics.                                                 |
+| **Imaging & Signals**     | Inter-modal Translation         | Converts data from one modality to another.                                                        | CT to MRI, ECG to PPG.                                                                            |
+|                           | Intra-modal Translation         | Translates data within the same modality.                                                          | T1-weighted MRI to T2-weighted MRI, single-lead ECG to 12-lead ECG.                               |
+|                           | Class or Semantic Map Synthesis | Generates data based on class labels or segmentation masks.                                         | Brain MRI with a tumor generated from a tumor mask, ECG labeled as "arrhythmia."                 |
+|                           | Attribute-based Synthesis       | Generates data based on patient-specific attributes (e.g., age, sex, BMI).                         | Personalized synthetic brain MRIs or ECG signals.                                                 |
+|                           | Text-based Synthesis            | Integrates clinical text into synthetic data generation.                                            | Generating X-rays or ECG signals from textual descriptions like "moderate bilateral pleural effusion." |
+| **Text**                 | NLP Enhancement                 | Improves tasks like NER, information extraction, summarization, and question answering.             | Improving NER on clinical notes with synthetic text.                                              |
+|                           | Text Augmentation               | Generates additional clinical notes, discharge summaries, or reports.                              | Augmenting patient reports when real data is limited.                                             |
+|                           | Text De-identification          | Removes or replaces PII while preserving utility and privacy.                                       | Replacing names, addresses, or diagnoses in clinical notes.                                       |
+
+
 ## **Overview of Tables**
 
 The repository contains 12 tables categorized as follows:
