@@ -26,7 +26,12 @@ This repository is structured to:
 4. [Images](#images)
    - [Dermoscopic Images](#dermoscopic-images)
    - [Mammographic Images](#mammographic-images)
-   - [Other Imaging Modalities](#other-imaging-modalities)
+   - [Ultrasound  Images](#ultrasound-images)
+   - [MRI  Images](#mri-images)
+   - [CT  Images](#ct-images)
+   - [X-ray  Images](#xray-images)
+   - [OCT  Images](#oct-images)
+   - [Multiple  Imaging Modalities](#multiple-imaging-modalities)
 5. [Text](#text)
 6. [Evaluation Metrics and Techniques](#evaluation-metrics-and-techniques)
 7. [Contributing](#contributing)
@@ -166,7 +171,7 @@ This section includes papers for dermoscopic, mammographic, ultrasound, CT, MRI,
 
 ## **Text**
 
-### Table 12: Clinical Notes and Radiology Reports
+### Clinical Notes and Radiology Reports
 
 | **Application**          | **Type**       | **Technology**         | **Paper**                           | **Code**                                | **Evaluation**                |
 |---------------------------|----------------|-------------------------|-------------------------------------|-----------------------------------------|-------------------------------|
