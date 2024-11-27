@@ -45,7 +45,7 @@ The repository contains 12 tables categorized as follows:
 | 4-11              | Images            | Dermoscopic, mammographic, ultrasound, CT, MRI, X-ray, and other imaging |
 | 12                | Text              | Clinical notes and radiology reports |
 
-Each table includes the **application, model type, technology, paper links, code repositories**, and **evaluation methods**.
+Each table includes the **application, model type, technology, Paperlinks, code repositories**, and **evaluation methods**.
 
 ---
 
@@ -55,44 +55,44 @@ Each table includes the **application, model type, technology, paper links, code
 
 | **Application**            | **Type**   | **Technology**      | **Paper**                               | **Code**                                | **Evaluation**            |
 |-----------------------------|------------|----------------------|-----------------------------------------|-----------------------------------------|---------------------------|
-| Patient Demographics Gen.  | GAN        | Tabular GAN          | [Paper ](https://example.com)      | [Code ](https://github.com/example) | Fidelity (MSE)            |
-| Disease Progression Model  | VAE        | Bayesian VAE         | [Paper ](https://example.com)      | [Code ](https://github.com/example) | Fidelity (KL Divergence), Privacy (k-Anonymity) |
+| Patient Demographics Gen.  | GAN        | Tabular GAN          | [Paper](https://example.com)      | [Code ](https://github.com/example) | Fidelity (MSE)            |
+| Disease Progression Model  | VAE        | Bayesian VAE         | [Paper](https://example.com)      | [Code ](https://github.com/example) | Fidelity (KL Divergence), Privacy (k-Anonymity) |
 
 ---
 
 ## **Signals**
 
 ### Electrocardiogram (ECG)
-| Type    | Application                                           | Architecture                                           | Paper                                                                             | Code                                                                                                    | Evaluation   | Date    |
+| Type    | Application                                           | Architecture                                           | Paper                                                                            | Code                                                                                                    | Evaluation   | Date    |
 |:--------|:------------------------------------------------------|:-------------------------------------------------------|:--------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------|:-------------|:--------|
-| GAN     | Intra-translation                                     | Bi-LSTM and CNN                                        | [Paper ](https://arxiv.org/abs/2310.03753)                                        | [Code ](https://github.com/maxbagga/ScarletEagle1)                                                      | F            | 2023-09 |
-| DM      | Class-conditional                                     | DSAT-ECG                                               | [Paper ](https://doi.org/10.3390/s23198328)                                       |                                                                                                             | U, F         | 2023-09 |
-| Other   | Unconditonal                                          | Bi-LSTM and CNN                                        | [Paper ](https://doi.org/10.1007/s13755-023-00241-y)                              |                                                                                                             | U            | 2023-08 |
-| DM      | Inter-translation                                     | Region-Disentangled Diffusion Model (RDDM)             | [Paper ](https://arxiv.org/abs/2308.13568)                                        | [Code ](https://github.com/DebadityaQU/RDDM)                                                            | U, F, C      | 2023-08 |
-| DM      | conditioning on other ECG statements;prioir knowledge | SSSD-ECG                                               | [Paper ](https://doi.org/10.1016/j.compbiomed.2023.107115)                        | [Code ](https://github.com/AI4HealthUOL/SSSD-ECG)                                                       | U, Q         | 2023-06 |
-| DM      | Class-conditional                                     | DDPM-based:DiffECG                                     | [Paper ](https://arxiv.org/abs/2306.01875)                                        |                                                                                                             | U, F, Q      | 2023-06 |
-| GAN     | Intra-translation                                     | StarGAN v2                                             | [Paper ](https://arxiv.org/pdf/2103.00006)                                        | [Code ](Original method)                                                                                | U, Q         | 2023-06 |
-| DM      | Unconditonal                                          | image-based:DDPM                                       | [Paper ](https://arxiv.org/pdf/2303.02475)                                        | [Code ](https://github.com/mah533/Synthetic-ECG-Signal-Generation-using-Probabilistic-Diffusion-Models) | U, F         | 2023-05 |
-| GAN     | Unconditonal                                          | LSTM-based:TS-GAN                                      | [Paper ](https://doi.org/10.1145/3583593)                                         |                                                                                                             | U, F, Q      | 2023-04 |
-| GAN,VAE | Class-conditional                                     | CVAE,CWGAN                                             | [Paper ](https://doi.org/10.1016/j.bspc.2023.104587)                              |                                                                                                             | U            | 2023-04 |
-| VAE,GAN | text-to-signal                                        | Auto-TTE                                               | [Paper ](https://arxiv.org/abs/2303.09395)                                        | [Code ](https://github.com/TClife/text_to_ecg)                                                          | U, F, D, Q   | 2023-03 |
-| GAN,AE  | Inter-translation                                     | classical GAN,adversarial AE,modality transfer GAN     | [Paper ](https://doi.org/10.1109/JBHI.2022.3223777)                               |                                                                                                             | U, F, Q      | 2023-02 |
-| GAN     | Class-conditional                                     | WGAN-GP-based:AC-WGAN-GP                               | [Paper ](https://arxiv.org/abs/2202.00569)                                        | [Code ](https://github.com/mah533/Augmentation-of-ECG-Training-Dataset-with-CGAN)                       | U            | 2022-11 |
-| GAN     | Clinical Knowledge                                    | WGAN-GP-based:CardiacGen                               | [Paper ](https://arxiv.org/abs/2211.08385)                                        | [Code ](https://github.com/SENSE-Lab-OSU/cardiac_gen_model)                                             | U, F, C, P   | 2022-11 |
-| GAN     | Unconditonal                                          | classic GAN , DC-DC GAN , BiLSTM-DC , AE/VAE-DC , WGAN | [Paper ](https://arxiv.org/abs/2112.03268)                                        | [Code ](https://github.com/mah533/Synthetic-ECG-Generation---GAN-Models-Comparison)                     | U, F, Q, C   | 2022-08 |
-| GAN     | Unconditonal                                          | image-based:TTS-GAN                                    | [Paper ](https://doi.org/10.1007/978-3-031-09342-5_13)                            | [Code ](https://github.com/imics-lab/tts-gan)                                                           | F, Q         | 2022-06 |
-| GAN     | conditioning on other ECG statements;prioir knowledge | Conditional GAN                                        | [Paper ](https://doi.org/10.1145/3477314.3507300)                                 |                                                                                                             | U, Q         | 2022-05 |
-| VAE     | specific subject characteristics                      | cVAE                                                   | [Paper ](https://doi.org/10.1109/ISBI52829.2022.9761431)                          |                                                                                                             | F            | 2022-04 |
-| GAN,VAE | Class-conditional                                     | PHYSIOGAN                                              | [Paper ](https://arxiv.org/abs/2204.13597)                                        | [Code ](yES)                                                                                            | U, F, D      | 2022-04 |
-| GAN     | Class-conditional                                     | DCCGAN (Deep convolutional condtional GAN)             | [Paper ](https://doi.org/10.1007/978-3-030-91390-8_12)                            |                                                                                                             | U, F, Q      | 2022-02 |
-| GAN     | Unconditonal                                          | WaveGAN,Pulse2Pulse                                    | [Paper ](https://doi.org/10.1038/s41598-021-01295-2)                              | [Code ](https://github.com/vlbthambawita/deepfake-ecg)                                                  | P            | 2021-11 |
-| GAN     | Unconditonal                                          | Composite GAN:LSTM-GAN and DCGAN                       | [Paper ](https://doi.org/10.23919/EUSIPCO54536.2021.9616079)                      |                                                                                                             | U            | 2021-08 |
-| GAN     | Unconditonal                                          | LSTM-based:BiLSTM                                      | [Paper ](https://www.sciencedirect.com/science/article/abs/pii/S0022073621001850) |                                                                                                             | F            | 2021-06 |
+| GAN     | Intra-translation                                     | Bi-LSTM and CNN                                        | [Paper](https://arxiv.org/abs/2310.03753)                                        | [Code ](https://github.com/maxbagga/ScarletEagle1)                                                      | F            | 2023-09 |
+| DM      | Class-conditional                                     | DSAT-ECG                                               | [Paper](https://doi.org/10.3390/s23198328)                                       |                                                                                                             | U, F         | 2023-09 |
+| Other   | Unconditonal                                          | Bi-LSTM and CNN                                        | [Paper](https://doi.org/10.1007/s13755-023-00241-y)                              |                                                                                                             | U            | 2023-08 |
+| DM      | Inter-translation                                     | Region-Disentangled Diffusion Model (RDDM)             | [Paper](https://arxiv.org/abs/2308.13568)                                        | [Code ](https://github.com/DebadityaQU/RDDM)                                                            | U, F, C      | 2023-08 |
+| DM      | conditioning on other ECG statements;prioir knowledge | SSSD-ECG                                               | [Paper](https://doi.org/10.1016/j.compbiomed.2023.107115)                        | [Code ](https://github.com/AI4HealthUOL/SSSD-ECG)                                                       | U, Q         | 2023-06 |
+| DM      | Class-conditional                                     | DDPM-based:DiffECG                                     | [Paper](https://arxiv.org/abs/2306.01875)                                        |                                                                                                             | U, F, Q      | 2023-06 |
+| GAN     | Intra-translation                                     | StarGAN v2                                             | [Paper](https://arxiv.org/pdf/2103.00006)                                        | [Code ](Original method)                                                                                | U, Q         | 2023-06 |
+| DM      | Unconditonal                                          | image-based:DDPM                                       | [Paper](https://arxiv.org/pdf/2303.02475)                                        | [Code ](https://github.com/mah533/Synthetic-ECG-Signal-Generation-using-Probabilistic-Diffusion-Models) | U, F         | 2023-05 |
+| GAN     | Unconditonal                                          | LSTM-based:TS-GAN                                      | [Paper](https://doi.org/10.1145/3583593)                                         |                                                                                                             | U, F, Q      | 2023-04 |
+| GAN,VAE | Class-conditional                                     | CVAE,CWGAN                                             | [Paper](https://doi.org/10.1016/j.bspc.2023.104587)                              |                                                                                                             | U            | 2023-04 |
+| VAE,GAN | text-to-signal                                        | Auto-TTE                                               | [Paper](https://arxiv.org/abs/2303.09395)                                        | [Code ](https://github.com/TClife/text_to_ecg)                                                          | U, F, D, Q   | 2023-03 |
+| GAN,AE  | Inter-translation                                     | classical GAN,adversarial AE,modality transfer GAN     | [Paper](https://doi.org/10.1109/JBHI.2022.3223777)                               |                                                                                                             | U, F, Q      | 2023-02 |
+| GAN     | Class-conditional                                     | WGAN-GP-based:AC-WGAN-GP                               | [Paper](https://arxiv.org/abs/2202.00569)                                        | [Code ](https://github.com/mah533/Augmentation-of-ECG-Training-Dataset-with-CGAN)                       | U            | 2022-11 |
+| GAN     | Clinical Knowledge                                    | WGAN-GP-based:CardiacGen                               | [Paper](https://arxiv.org/abs/2211.08385)                                        | [Code ](https://github.com/SENSE-Lab-OSU/cardiac_gen_model)                                             | U, F, C, P   | 2022-11 |
+| GAN     | Unconditonal                                          | classic GAN , DC-DC GAN , BiLSTM-DC , AE/VAE-DC , WGAN | [Paper](https://arxiv.org/abs/2112.03268)                                        | [Code ](https://github.com/mah533/Synthetic-ECG-Generation---GAN-Models-Comparison)                     | U, F, Q, C   | 2022-08 |
+| GAN     | Unconditonal                                          | image-based:TTS-GAN                                    | [Paper](https://doi.org/10.1007/978-3-031-09342-5_13)                            | [Code ](https://github.com/imics-lab/tts-gan)                                                           | F, Q         | 2022-06 |
+| GAN     | conditioning on other ECG statements;prioir knowledge | Conditional GAN                                        | [Paper](https://doi.org/10.1145/3477314.3507300)                                 |                                                                                                             | U, Q         | 2022-05 |
+| VAE     | specific subject characteristics                      | cVAE                                                   | [Paper](https://doi.org/10.1109/ISBI52829.2022.9761431)                          |                                                                                                             | F            | 2022-04 |
+| GAN,VAE | Class-conditional                                     | PHYSIOGAN                                              | [Paper](https://arxiv.org/abs/2204.13597)                                        | [Code ](yES)                                                                                            | U, F, D      | 2022-04 |
+| GAN     | Class-conditional                                     | DCCGAN (Deep convolutional condtional GAN)             | [Paper](https://doi.org/10.1007/978-3-030-91390-8_12)                            |                                                                                                             | U, F, Q      | 2022-02 |
+| GAN     | Unconditonal                                          | WaveGAN,Pulse2Pulse                                    | [Paper](https://doi.org/10.1038/s41598-021-01295-2)                              | [Code ](https://github.com/vlbthambawita/deepfake-ecg)                                                  | P            | 2021-11 |
+| GAN     | Unconditonal                                          | Composite GAN:LSTM-GAN and DCGAN                       | [Paper](https://doi.org/10.23919/EUSIPCO54536.2021.9616079)                      |                                                                                                             | U            | 2021-08 |
+| GAN     | Unconditonal                                          | LSTM-based:BiLSTM                                      | [Paper](https://www.sciencedirect.com/science/article/abs/pii/S0022073621001850) |                                                                                                             | F            | 2021-06 |
 ### Other Signals
 
 | **Application**         | **Type**   | **Modality**     | **Technology**  | **Paper**                           | **Code**                                | **Evaluation**            |
 |--------------------------|------------|------------------|------------------|-------------------------------------|-----------------------------------------|---------------------------|
-| Physiological Signal Gen | GAN        | Multi-signal     | AC-WGAN-GP       | [Paper ](https://example.com)  | [Code ](https://github.com/example) | Fidelity (MSE), Diversity (Variance) |
+| Physiological Signal Gen | GAN        | Multi-signal     | AC-WGAN-GP       | [Paper](https://example.com)  | [Code ](https://github.com/example) | Fidelity (MSE), Diversity (Variance) |
 
 ---
 
@@ -104,7 +104,7 @@ This section includes papers for dermoscopic, mammographic, ultrasound, CT, MRI,
 
 | **Application**         | **Type**   | **Modality**   | **Technology**  | **Paper**                           | **Code**                                | **Evaluation**                |
 |--------------------------|------------|----------------|------------------|-------------------------------------|-----------------------------------------|-------------------------------|
-| Lesion Segmentation      | GAN        | Dermoscopic    | DCGAN            | [Paper ](https://example.com)  | [Code ](https://github.com/example) | Fidelity (IoU), Diversity (IS), Clinical Review |
+| Lesion Segmentation      | GAN        | Dermoscopic    | DCGAN            | [Paper](https://example.com)  | [Code ](https://github.com/example) | Fidelity (IoU), Diversity (IS), Clinical Review |
 
 ---
 
@@ -112,7 +112,7 @@ This section includes papers for dermoscopic, mammographic, ultrasound, CT, MRI,
 
 | **Application**         | **Type**   | **Modality**   | **Technology**  | **Paper**                           | **Code**                                | **Evaluation**                |
 |--------------------------|------------|----------------|------------------|-------------------------------------|-----------------------------------------|-------------------------------|
-| Lesion Segmentation      | GAN        | Dermoscopic    | DCGAN            | [Paper ](https://example.com)  | [Code ](https://github.com/example) | Fidelity (IoU), Diversity (IS), Clinical Review |
+| Lesion Segmentation      | GAN        | Dermoscopic    | DCGAN            | [Paper](https://example.com)  | [Code ](https://github.com/example) | Fidelity (IoU), Diversity (IS), Clinical Review |
 
 ---
 
@@ -120,7 +120,7 @@ This section includes papers for dermoscopic, mammographic, ultrasound, CT, MRI,
 
 | **Application**         | **Type**   | **Modality**   | **Technology**  | **Paper**                           | **Code**                                | **Evaluation**                |
 |--------------------------|------------|----------------|------------------|-------------------------------------|-----------------------------------------|-------------------------------|
-| Lesion Segmentation      | GAN        | Dermoscopic    | DCGAN            | [Paper ](https://example.com)  | [Code ](https://github.com/example) | Fidelity (IoU), Diversity (IS), Clinical Review |
+| Lesion Segmentation      | GAN        | Dermoscopic    | DCGAN            | [Paper](https://example.com)  | [Code ](https://github.com/example) | Fidelity (IoU), Diversity (IS), Clinical Review |
 
 ---
 
@@ -128,7 +128,7 @@ This section includes papers for dermoscopic, mammographic, ultrasound, CT, MRI,
 
 | **Application**         | **Type**   | **Modality**   | **Technology**  | **Paper**                           | **Code**                                | **Evaluation**                |
 |--------------------------|------------|----------------|------------------|-------------------------------------|-----------------------------------------|-------------------------------|
-| Lesion Segmentation      | GAN        | Dermoscopic    | DCGAN            | [Paper ](https://example.com)  | [Code ](https://github.com/example) | Fidelity (IoU), Diversity (IS), Clinical Review |
+| Lesion Segmentation      | GAN        | Dermoscopic    | DCGAN            | [Paper](https://example.com)  | [Code ](https://github.com/example) | Fidelity (IoU), Diversity (IS), Clinical Review |
 
 ---
 
@@ -136,7 +136,7 @@ This section includes papers for dermoscopic, mammographic, ultrasound, CT, MRI,
 
 | **Application**         | **Type**   | **Modality**   | **Technology**  | **Paper**                           | **Code**                                | **Evaluation**                |
 |--------------------------|------------|----------------|------------------|-------------------------------------|-----------------------------------------|-------------------------------|
-| Lesion Segmentation      | GAN        | Dermoscopic    | DCGAN            | [Paper ](https://example.com)  | [Code ](https://github.com/example) | Fidelity (IoU), Diversity (IS), Clinical Review |
+| Lesion Segmentation      | GAN        | Dermoscopic    | DCGAN            | [Paper](https://example.com)  | [Code ](https://github.com/example) | Fidelity (IoU), Diversity (IS), Clinical Review |
 
 ---
 
@@ -144,7 +144,7 @@ This section includes papers for dermoscopic, mammographic, ultrasound, CT, MRI,
 
 | **Application**         | **Type**   | **Modality**   | **Technology**  | **Paper**                           | **Code**                                | **Evaluation**                |
 |--------------------------|------------|----------------|------------------|-------------------------------------|-----------------------------------------|-------------------------------|
-| Lesion Segmentation      | GAN        | Dermoscopic    | DCGAN            | [Paper ](https://example.com)  | [Code ](https://github.com/example) | Fidelity (IoU), Diversity (IS), Clinical Review |
+| Lesion Segmentation      | GAN        | Dermoscopic    | DCGAN            | [Paper](https://example.com)  | [Code ](https://github.com/example) | Fidelity (IoU), Diversity (IS), Clinical Review |
 
 ---
 
@@ -152,7 +152,7 @@ This section includes papers for dermoscopic, mammographic, ultrasound, CT, MRI,
 
 | **Application**         | **Type**   | **Modality**   | **Technology**  | **Paper**                           | **Code**                                | **Evaluation**                |
 |--------------------------|------------|----------------|------------------|-------------------------------------|-----------------------------------------|-------------------------------|
-| Lesion Segmentation      | GAN        | Dermoscopic    | DCGAN            | [Paper ](https://example.com)  | [Code ](https://github.com/example) | Fidelity (IoU), Diversity (IS), Clinical Review |
+| Lesion Segmentation      | GAN        | Dermoscopic    | DCGAN            | [Paper](https://example.com)  | [Code ](https://github.com/example) | Fidelity (IoU), Diversity (IS), Clinical Review |
 
 ---
 
@@ -160,7 +160,7 @@ This section includes papers for dermoscopic, mammographic, ultrasound, CT, MRI,
 
 | **Application**         | **Type**   | **Modality**   | **Technology**  | **Paper**                           | **Code**                                | **Evaluation**                |
 |--------------------------|------------|----------------|------------------|-------------------------------------|-----------------------------------------|-------------------------------|
-| Lesion Segmentation      | GAN        | Dermoscopic    | DCGAN            | [Paper ](https://example.com)  | [Code ](https://github.com/example) | Fidelity (IoU), Diversity (IS), Clinical Review |
+| Lesion Segmentation      | GAN        | Dermoscopic    | DCGAN            | [Paper](https://example.com)  | [Code ](https://github.com/example) | Fidelity (IoU), Diversity (IS), Clinical Review |
 
 ---
 
@@ -170,7 +170,7 @@ This section includes papers for dermoscopic, mammographic, ultrasound, CT, MRI,
 
 | **Application**          | **Type**       | **Technology**         | **Paper**                           | **Code**                                | **Evaluation**                |
 |---------------------------|----------------|-------------------------|-------------------------------------|-----------------------------------------|-------------------------------|
-| Clinical Note Gen.        | LLM           | GPT-3                  | [Paper ](https://example.com)  | [Code ](https://github.com/example) | Language Coherence (BLEU), Privacy (k-Anonymity) |
+| Clinical Note Gen.        | LLM           | GPT-3                  | [Paper](https://example.com)  | [Code ](https://github.com/example) | Language Coherence (BLEU), Privacy (k-Anonymity) |
 
 ---
 
