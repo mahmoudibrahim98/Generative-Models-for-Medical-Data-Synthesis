@@ -156,7 +156,7 @@ This section includes papers for dermoscopic, mammographic, ultrasound, CT, MRI,
 
 ---
 
-### Multiple Images
+### Multiple modalities Images
 
 | **Application**         | **Type**   | **Modality**   | **Technology**  | **Paper**                           | **Code**                                | **Evaluation**                |
 |--------------------------|------------|----------------|------------------|-------------------------------------|-----------------------------------------|-------------------------------|
