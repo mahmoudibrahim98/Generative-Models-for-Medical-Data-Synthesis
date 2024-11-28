@@ -222,11 +222,20 @@ This section includes papers for dermoscopic, mammographic, ultrasound, CT, MRI,
 
 ### Multiple modalities Images
 
-| **Application**         | **Type**   | **Modality**   | **Technology**  | **Paper**                           | **Code**                                | **Evaluation**                |
-|--------------------------|------------|----------------|------------------|-------------------------------------|-----------------------------------------|-------------------------------|
-| Lesion Segmentation      | GAN        | Dermoscopic    | DCGAN            | [Paper](https://example.com)  | [Code ](https://github.com/example) | Fidelity (IoU), Diversity (IS), Clinical Review |
-
----
+| Type       | Application                           | Architecture              | Paper Link                                              | Code Link                                            | Evaluation    | Date    |
+|:-----------|:--------------------------------------|:--------------------------|:--------------------------------------------------------|:-----------------------------------------------------|:--------------|:--------|
+| DM         | Conditioned on other images           | Conditional DM            | [Paper](https://doi.org/10.3390/bioengineering10111258) |                                                      | U, F, P       | 2023-11 |
+| GAN and DM | Unconditional                         | StyleGAN,DDPM             | [arXiv](https://arxiv.org/abs/2305.07644)               |                                                      | F, P          | 2023-10 |
+| DM         | Text guided conditioning              | EMIT-Diff                 | [arXiv](https://arxiv.org/abs/2310.12868)               |                                                      | U, F, P       | 2023-10 |
+| DM         | Conditioned on other Diffuison Models | TPDM                      | [arXiv](https://arxiv.org/abs/2303.08440)               | [Code](https://github.com/hyn2028/tpdm)              | F, P          | 2023-09 |
+| GAN        | Combining tabular and imaging data    | αGAN and CTGAN            | [arXiv]( http://arxiv.org/abs/2308.07573v2 )            |                                                      | U, Q, P       | 2023-08 |
+| VAE,DDPM   | Unconditional                         | VQ-GAN followed by DDPM   | [Paper](https://doi.org/10.1038/s41598-023-34341-2)     | [Code](https://github.com/FirasGit/medicaldiffusion) | U, D, Q, C, P | 2023-05 |
+| DM         | Unconditional                         | MT-DDPM                   | [Paper](https://doi.org/10.1088/1361-6560/acca5c)       |                                                      | U, F, D, Q, P | 2023-05 |
+| DM         | Attribute conditional                 | DDPM                      | [Paper](https://doi.org/10.1038/s41591-024-02838-6)     |                                                      | U, P          | 2023-04 |
+| DM         | Text guided conditioning              | FineTuned StableDiffusion | [arXiv](https://arxiv.org/abs/2303.13430)               |                                                      | U, F, P       | 2023-03 |
+| DM         | class or label conditional            | based on Stable Diffusion | [Paper](https://doi.org/10.1038/s41598-023-39278-0)     | [Code](https://github.com/mueller-franzes/medfusion) | U, F, D       | 2022-12 |
+| GAN        | class or label conditional            | HA-GAN                    | [Paper](https://doi.org/10.1109/JBHI.2022.3172976)      | [Code](https://github.com/batmanlab/HA-GAN)          | U, F, D, C    | 2022-08 |
+| GAN        | class or label conditional            | Multiple GANs             | [Paper](https://doi.org/10.3390/jimaging9030069)        |                                                      | U, F, Q, P    | 2021-05 |
 
 ## **Text**
 
