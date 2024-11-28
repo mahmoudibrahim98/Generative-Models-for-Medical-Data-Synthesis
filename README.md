@@ -143,11 +143,26 @@ This section includes papers for dermoscopic, mammographic, ultrasound, CT, MRI,
 
 ### Ultrasound Images
 
-| **Application**         | **Type**   | **Modality**   | **Technology**  | **Paper**                           | **Code**                                | **Evaluation**                |
-|--------------------------|------------|----------------|------------------|-------------------------------------|-----------------------------------------|-------------------------------|
-| Lesion Segmentation      | GAN        | Dermoscopic    | DCGAN            | [Paper](https://example.com)  | [Code ](https://github.com/example) | Fidelity (IoU), Diversity (IS), Clinical Review |
-
----
+| Type                    | Application       | Architecture       | Paper Link                                               | Code Link                                                    | Evaluation   | Date    |
+|:------------------------|:------------------|:-------------------|:---------------------------------------------------------|:-------------------------------------------------------------|:-------------|:--------|
+| GAN                     | inter-Translation | ApGAN              | [Paper](https://doi.org/10.1016/j.cmpb.2023.107642)      |                                                              | U, F, Q, C   | 2023-10 |
+| VAE                     | inter-Translation | MHVAE              | [Paper](https://doi.org/10.1007/978-3-031-43999-5_43)    | [Code](https://github.com/ReubenDo/MHVAE)                    | F            | 2023-10 |
+| GAN                     | Class conditional | GAN-CA             | [Paper](https://doi.org/10.1109/ICET58434.2023.10211926) | [Code](https://github.com/jalbayd1/myopathy_US)              | U            | 2023-08 |
+| gan                     | Class conditional | Phased GAN         | [Paper](https://doi.org/10.1016/j.bspc.2023.105196)      |                                                              | U            | 2023-07 |
+| Diffusion Models        | Class conditional | DDPM               | [Paper](https://doi.org/10.1007/978-3-031-44521-7_4)     | [Code](https://github.com/david-stojanovski/echo_from_noise) | U            | 2023-05 |
+| Diffusion Model and GAN | Unconditional     | DSR-GAN,TB-GAN     | [arXiv](http://arxiv.org/abs/2304.03941v1 )              | [Code](https://github.com/budai4medtech/midl2023)            | F            | 2023-04 |
+| gan                     | intra-translation | U-net based gen    | [Paper](https://doi.org/10.1038/s41467-023-36102-1)      | [Code](https://github.com/yyyzzzhao/VEUS)                   | U, F, Q      | 2023-02 |
+| GAN                     | inter-Translation | CycleGAN based     | [Paper](https://doi.org/10.1109/IUS54386.2022.9957451)   |                                                              | U            | 2022-12 |
+| GAN                     | inter-Translation | 3D Pix2pix         | [Paper](https://doi.org/10.1109/ACCESS.2022.3207177)     |                                                              | U, Q         | 2022-09 |
+| GAN                     | Unconditional     | StyleGAN2 variants | [Paper](https://doi.org/10.1515/cdbme-2022-0005)         |                                                              | U, F         | 2022-07 |
+| gan                     | intra-translation | spGAN              | [Paper](https://doi.org/10.1016/j.media.2022.102461)     | [Code](https://github.com/Carmenliang/UI_synthesis)          | U, F         | 2022-04 |
+| GAN                     | inter-Translation | CycleGAN           | [Paper](https://doi.org/10.1016/j.ultras.2022.106706)    |                                                              | U, F         | 2022-02 |
+| gan                     | intra-translation | pix2pix based      | [Paper](https://doi.org/10.3390/diagnostics12020253)     |                                                              | F, Q         | 2022-01 |
+| gan                     | intra-translation | PSFFGAN            | [Paper](https://doi.org/10.1109/JBHI.2022.3143319)       |                                                              | F, Q         | 2022-01 |
+| H:GAN,VAE               | Unconditional     | Improved α-WGAN-GP | [Paper](https://doi.org/10.1109/IUS52206.2021.9593403)   |                                                              | U, F         | 2021-11 |
+| GAN                     | Unconditional     | stylegan2-ada      | [Paper](https://doi.org/10.3390/s21237975)               | [Code](https://github.com/albertoMontero/stylegan2-ada)      | U, F         | 2021-11 |
+| GAN                     | Unconditional     | StackGAN           | [Paper](https://doi.org/10.1007/978-3-030-87583-1_18)    |                                                              | U, F, Q      | 2021-07 |
+| GAN                     | Unconditional     | TripleGAN          | [Paper](https://doi.org/10.1016/j.cmpb.2021.106018)      |                                                              | U, Q         | 2021-02 |
 
 ### MRI Images
 
