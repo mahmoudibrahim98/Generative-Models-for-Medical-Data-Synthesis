@@ -18,7 +18,7 @@ This repository is structured to:
 
 ## **Table of Contents**
 
-1. [Overview of Tables](#overview-of-tables)
+1. [Synthesis applications and purpose of synthesis](#synthesis-applications)
 2. [Electronic Health Records (EHR)](#electronic-health-records-ehr)
 3. [Signals](#signals)
    - [Electrocardiogram (ECG)](#electrocardiogram-ecg)
@@ -38,6 +38,30 @@ This repository is structured to:
 8. [License](#license)
 
 ---
+
+## **Synthesis applications and purpose of synthesis**
+Generative models in medical data synthesis can be broadly categorized into unconditional and conditional models:
+
+1. Unconditional Models: These models take a random variable as input and generate data without additional context or guidance.
+2. Conditional Models: These models incorporate external information, such as images, text, semantic maps, class labels, attributes, or signals, to guide the generation process.
+
+### **Key Synthesis Applications**
+
+| **Data Type**            | **Synthesis Application**       | **Description**                                                                                     | **Examples**                                                                                       |
+|---------------------------|----------------------------------|-----------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
+| **EHR**                  | Longitudinal EHR                | Medical codes from multiple patient visits.                                                        | Patient diagnostic history across hospital visits.                                                |
+|                           | Aggregated EHR                 | Longitudinal data condensed into a single row.                                                     | Summary of all patient visits in a single record.                                                 |
+|                           | Time-dependent EHR             | Time-series readings from a single patient visit.                                                  | Vitals recorded during a hospital stay.                                                           |
+|                           | Snapshot EHR                   | A single snapshot focusing on specific patient attributes.                                          | Demographic details with selected health metrics.                                                 |
+| **Imaging & Signals**     | Inter-modal Translation         | Converts data from one modality to another.                                                        | CT to MRI, ECG to PPG.                                                                            |
+|                           | Intra-modal Translation         | Translates data within the same modality.                                                          | T1-weighted MRI to T2-weighted MRI, single-lead ECG to 12-lead ECG.                               |
+|                           | Class or Semantic Map Synthesis | Generates data based on class labels or segmentation masks.                                         | Brain MRI with a tumor generated from a tumor mask, ECG labeled as "arrhythmia."                 |
+|                           | Attribute-based Synthesis       | Generates data based on patient-specific attributes (e.g., age, sex, BMI).                         | Personalized synthetic brain MRIs or ECG signals.                                                 |
+|                           | Text-based Synthesis            | Integrates clinical text into synthetic data generation.                                            | Generating X-rays or ECG signals from textual descriptions like "moderate bilateral pleural effusion." |
+| **Text**                 | NLP Enhancement                 | Improves tasks like NER, information extraction, summarization, and question answering.             | Improving NER on clinical notes with synthetic text.                                              |
+|                           | Text Augmentation               | Generates additional clinical notes, discharge summaries, or reports.                              | Augmenting patient reports when real data is limited.                                             |
+|                           | Text De-identification          | Removes or replaces PII while preserving utility and privacy.                                       | Replacing names, addresses, or diagnoses in clinical notes.                                       |
+
 
 ## **Overview of Tables**
 
@@ -76,7 +100,7 @@ Each table includes the **application, model type, technology, Paperlinks, code 
 | DM      | Inter-translation                                     | Region-Disentangled Diffusion Model (RDDM)             | [arXiv](https://arxiv.org/abs/2308.13568)                                        | [Code](https://github.com/DebadityaQU/RDDM)                                                            | U, F, C      | 2023-08 |
 | DM      | conditioning on other ECG statements;prioir knowledge | SSSD-ECG                                               | [Paper](https://doi.org/10.1016/j.compbiomed.2023.107115)                        | [Code](https://github.com/AI4HealthUOL/SSSD-ECG)                                                       | U, Q         | 2023-06 |
 | DM      | Class-conditional                                     | DDPM-based:DiffECG                                     | [arXiv](https://arxiv.org/abs/2306.01875)                                        |                                                                                                        | U, F, Q      | 2023-06 |
-| GAN     | Intra-translation                                     | StarGAN v2                                             | [arXiv](https://arxiv.org/pdf/2103.00006)                                        | [Code](Original method)                                                                                | U, Q         | 2023-06 |
+| GAN     | Intra-translation                                     | StarGAN v2                                             | [arXiv](https://arxiv.org/pdf/2103.00006)                                        | [Original](https://github.com/clovaai/stargan-v2)                                                                                | U, Q         | 2023-06 |
 | DM      | Unconditonal                                          | image-based:DDPM                                       | [arXiv](https://arxiv.org/pdf/2303.02475)                                        | [Code](https://github.com/mah533/Synthetic-ECG-Signal-Generation-using-Probabilistic-Diffusion-Models) | U, F         | 2023-05 |
 | GAN     | Unconditonal                                          | LSTM-based:TS-GAN                                      | [Paper](https://doi.org/10.1145/3583593)                                         |                                                                                                        | U, F, Q      | 2023-04 |
 | GAN,VAE | Class-conditional                                     | CVAE,CWGAN                                             | [Paper](https://doi.org/10.1016/j.bspc.2023.104587)                              |                                                                                                        | U            | 2023-04 |
@@ -132,14 +156,14 @@ This section includes papers for dermoscopic, mammographic, ultrasound, CT, MRI,
 | GAN             | Class conditional | Cgan                                 | [Paper](https://doi.org/10.1016/j.bspc.2023.105456)        |                                                                       | U            | 2024-01 |
 | Diffusion Model | text-to-image     | FineTuned_StableDiffusion            | [Paper](https://doi.org/10.3390/s24072076)                 | [Code](https://github.com/Likalto4/diffusion-models_master/tree/main) | F, Q         | 2023-06 |
 | GAN             | Intra-translation | CycleGAN                             | [Paper](https://doi.org/10.3389/fonc.2022.1044496)         | [Code](https://github.com/RichardObi/medigan)                         | U, F, Q, P   | 2023-01 |
-| GAN             | Intra-translation | complete representation GAN (CR-GAN) | [Paper](https://doi.org/10.3390/app122312206)              | [Original Code](https://github.com/bluer555/CR-GAN)           | F, P         | 2022-11 |
+| GAN             | Intra-translation | complete representation GAN (CR-GAN) | [Paper](https://doi.org/10.3390/app122312206)              | [Original](https://github.com/bluer555/CR-GAN)           | F, P         | 2022-11 |
 | GAN             | Intra-translation | Pix2Pix                              | [Paper](https://doi.org/10.1109/IMPACT55510.2022.10029087) |                                                                       | U, F, P      | 2022-11 |
 | GAN             | Intra-translation | pGAN variant                         | [Paper](https://doi.org/10.1016/j.compbiomed.2022.105444)  |                                                                       | U            | 2022-06 |
 | GAN             | Class conditional | ROImammoGAN                          | [Paper](https://doi.org/10.1038/s41598-022-09929-9)        |                                                                       | F, P         | 2022-04 |
 | GAN             | Intra-translation | HRGAN, based on CycleGAN             | [Paper](https://doi.org/10.3389/fonc.2022.868257)          |                                                                       | U            | 2022-04 |
 | GAN             | Unconditional     | DCGAN,WGAN-GP                        | [Paper](https://doi.org/10.1117/12.2625781)                |                                                                       | U, P         | 2022-03 |
 | GAN             | Intra-translation | Pix2Pix                              | [Paper](https://doi.org/10.1109/TMI.2021.3108949)          |                                                                       | U, P         | 2021-12 |
-| GAN             | Intra-translation | DCGAN , InfillingGAN                 | [Paper](https://doi.org/10.1016/j.cmpb.2021.106019)        | [Original Code](https://github.com/Natsu6767/DCGAN-PyTorch)                                      | U, F, P      | 2021-04 |
+| GAN             | Intra-translation | DCGAN , InfillingGAN                 | [Paper](https://doi.org/10.1016/j.cmpb.2021.106019)        | [Original](https://github.com/Natsu6767/DCGAN-PyTorch)                                      | U, F, P      | 2021-04 |
 
 ### Ultrasound Images
 
