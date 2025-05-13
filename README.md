@@ -84,8 +84,11 @@ Each table includes the **application, model type, technology, Paperlinks, code 
 
 | **Application**            | **Type**   | **Technology**      | **Paper**                               | **Code**                                | **Evaluation**            |
 |-----------------------------|------------|----------------------|-----------------------------------------|-----------------------------------------|---------------------------|
-| Patient Demographics Gen.  | GAN        | Tabular GAN          | [Paper](https://example.com)      | [Code ](https://github.com/example) | Fidelity (MSE)            |
+| TimeSeries  | DM & VAE        | tIMEAUTODIFF          | [Paper](https://arxiv.org/abs/2406.16028)      | [Code ]([https://github.com/example](https://github.com/namjoonsuh/TimeAutoDiff)) | Fidelity,Utility            |
 | Disease Progression Model  | VAE        | Bayesian VAE         | [Paper](https://example.com)      | [Code ](https://github.com/example) | Fidelity (KL Divergence), Privacy (k-Anonymity) |
+
+
+
 
 ---
 
