@@ -84,7 +84,7 @@ Each table includes the **application, model type, technology, Paperlinks, code 
 
 | **Application**            | **Type**   | **Technology**      | **Paper**                               | **Code**                                | **Evaluation**            |
 |-----------------------------|------------|----------------------|-----------------------------------------|-----------------------------------------|---------------------------|
-| TimeSeries  | DM & VAE        | TimeAutoDiff          | [Paper](https://arxiv.org/abs/2406.16028)      | [Code]([https://github.com/example](https://github.com/namjoonsuh/TimeAutoDiff)) | Fidelity,Utility            |
+| TimeSeries  | DM & VAE        | TimeAutoDiff          | [Paper](https://arxiv.org/abs/2406.16028)      | [Code](https://github.com/namjoonsuh/TimeAutoDiff) | Fidelity,Utility            |
 | TimeSeries  | VAE        | DM         | [Paper](https://arxiv.org/pdf/2310.15290v6)      | [Code](https://github.com/MuhangTian/TimeDiff) | Fidelity, Utility, Privacy |
 
 
